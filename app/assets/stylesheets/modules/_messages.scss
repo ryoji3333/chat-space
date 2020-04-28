@@ -1,0 +1,185 @@
+@import 'variables';
+
+* {
+  box-sizing: border-box;
+}
+
+.side-bar{
+  width: 300px;
+  height: 100vh;
+  float: left;
+    &__user-name{
+      background-color: #253141;
+      width: 300px;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      }
+      .top-items{
+        height: 20px;
+        width: 260px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &__name{
+          color: $text-color;
+        }
+        &__icons{
+          width: 60px;
+          height: 20px;
+          text-align: right;
+          line-height: 20px;
+        .btn-create-group{
+          text-decoration: none;
+          .icons{
+            color: $text-color;
+          }
+        }
+        .btn-edit{
+          text-decoration: none;
+          padding-left: 5px;
+          .icons{
+            color: $text-color;
+          }
+        }
+        }
+      }
+    &__group-list{
+      background-color: #2f3e51;
+      width: 300px;
+      height: calc(100vh - 100px);
+      .group-name{
+        color: $text-color;
+        font-size: 15px;
+        padding-top: 20px;
+        padding-left: 20px;
+      }
+      .group-message{
+        color: $text-color;
+        font-size: 11px;
+        padding-top: 5px;
+        padding-bottom: 40px;
+        padding-left: 20px;
+      }
+    }
+}
+
+
+.chat-main{
+  background-color: #ffffff;
+  width: calc(100vw - 300px);
+  height: 100vh;
+  float: right;
+    &__group-info{
+      background-color: #ffffff;
+      width: calc(100vw - 300px);
+      height: 100px;
+      border-bottom: solid 1px #eeeeee;
+      .items-info{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__top-left{
+          .group-name{
+            color: #333333;
+            font-size: 20px;
+            padding-top: 35px;
+            padding-left: 40px;
+            padding-bottom: 15px;
+          }
+          .member-list{
+            color: #999999;
+            font-size: 12px;
+            padding-left: 40px;
+          }
+        }
+        &__top-right{
+          .btn-edit{
+            text-decoration: none;
+            color: #38aef0;
+          }
+          .edit{
+            width: 72px;
+            height: 40px;
+            margin-right: 40px;
+            margin-top: 28px;
+            margin-bottom: 32px;
+            border: solid 1px; color: #38aef0;
+            font-size: 16px;
+            padding-left: 20px;
+            padding-right: 20px;
+            line-height: 40px;
+          }
+        }
+      }
+    }
+    &__message-list{
+      background-color: #fafafa;
+      width: calc(100vw - 300px);
+      height: calc(100vh - 190px);
+      padding-top: 35px;
+      .message{
+        padding-left: 40px;
+        margin-bottom: 46px;
+        &__message-top{
+          display: flex;
+          &--name{
+          color: #333333;
+          font-size: 16px;
+          margin-bottom: 12px;
+          }
+          &--created-at{
+          color: #999999;
+          font-size: 12px;
+          margin-left: 5px;
+          }
+        }
+        &__text{
+          color: #434A54;
+          font-size: 14px;
+        }
+      }
+    }
+    &__message-form{
+      background-color:#d2d2d2;
+      width: calc(100vw - 300px);
+      display: flex;
+      justify-content: right;
+      align-items: center;
+      height: 90px;
+        .message{
+          padding-left: 40px;
+          position: relative;
+          display: flex;
+          justify-content: right;
+          align-items: center;
+          &__text{
+          width: calc(100vw - 500px);
+          height: 50px;
+          padding-left: 10px;
+          }
+          &__image{
+          position: absolute;
+          right: 10px;
+          font-size: 25px;
+            .image-form{
+              display:none;
+            }
+          }
+        }
+        &--send-form{
+          padding-left: 15px;
+          padding-right: 40ox;
+          text-decoration: none;
+          &--send{
+          background-color:#38aef0;
+          width: 100px;
+          height: 50px;
+          text-align: center;
+          line-height: 50px;
+          color: $text-color;
+          }
+        }
+    }
+}
