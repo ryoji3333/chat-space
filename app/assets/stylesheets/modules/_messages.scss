@@ -148,38 +148,40 @@
       justify-content: right;
       align-items: center;
       height: 90px;
-        .message{
-          padding-left: 40px;
-          position: relative;
+        .new_message{
           display: flex;
           justify-content: right;
           align-items: center;
-          &__text{
-          width: calc(100vw - 500px);
-          height: 50px;
-          padding-left: 10px;
-          }
-          &__image{
-          position: absolute;
-          right: 10px;
-          font-size: 25px;
-            .image-form{
-              display:none;
+          .message__image{
+            padding-left: 40px;
+            position: relative;
+            .form__message{
+            width: calc(100vw - 500px);
+            height: 50px;
+            padding-left: 10px;
+            }
+            .label{
+              position: absolute;
+              right: 10px;
+              line-height: 50px;
+              font-size: 25px;
+              .image-form{
+                display:none;
+              }
             }
           }
-        }
-        &--send-form{
-          padding-left: 15px;
-          padding-right: 40ox;
-          text-decoration: none;
-          &--send{
-          background-color:#38aef0;
-          width: 100px;
-          height: 50px;
-          text-align: center;
-          line-height: 50px;
-          color: $text-color;
+          .send-form{
+            margin-left: 15px;
+            margin-right: 40ox;
+            text-decoration: none;
+            background-color:#38aef0;
+            width: 100px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            color: $text-color;
+            padding: 0 30px;
           }
-        }
+      }
     }
 }
