@@ -13,8 +13,7 @@
           .edit
             Edit
   .chat-main__message-list
-    .message
-      = render @messages
+    = render @messages
   .chat-main__message-form
     = form_for [@group, @message] do |f|
       .message__image
