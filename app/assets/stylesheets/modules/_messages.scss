@@ -49,6 +49,9 @@
       background-color: #2f3e51;
       width: 300px;
       height: calc(100vh - 100px);
+      .group-link{
+        text-decoration: none;
+      }
       .group-name{
         color: $text-color;
         font-size: 15px;
